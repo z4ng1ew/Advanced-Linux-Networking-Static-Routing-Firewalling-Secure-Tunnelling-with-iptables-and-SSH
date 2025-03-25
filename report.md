@@ -523,9 +523,11 @@ done
 4. Пропингуй соединение между машинами.
 
 5. В отчёт помести скрин с вызовом и выводом использованной команды.
-
+- ws1 <br>
 ![part2](./img/2_task/ws1_ping_statick_route.png)
+- ws2 <br>
 ![part2](./img/2_task/ws2_ping_statick_route.png)
+
 
 
 
