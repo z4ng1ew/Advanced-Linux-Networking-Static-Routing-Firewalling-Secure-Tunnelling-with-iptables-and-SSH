@@ -698,8 +698,14 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 > ![part3](./img/5_task/ip4a_ws21.png)
 > ![part3](./img/5_task/ip4a_ws22.png)
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
- - Также пропингуй ws22 с ws21. 
+
+ ## Также пропингуй ws22 с ws21. 
  - ws21
 > ![part3](./img/5_task/ws21_ping.png)
 > ![part3](./img/5_task/ws21_ping.png)
