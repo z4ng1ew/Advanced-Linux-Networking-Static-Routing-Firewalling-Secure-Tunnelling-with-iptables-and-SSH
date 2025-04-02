@@ -722,9 +722,9 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 sysctl -w net.ipv4.ip_forward=1
 
 - r1
-> ![part3](./img/5_task/forward_r1.png)
+> ![](./img/5_task/forward_r1.png)
 - r2
-> ![part3](./img/5_task/forward_r2.png)
+> ![](./img/5_task/forward_r2.png)
 
 При таком подходе переадресация не будет работать после перезагрузки системы.
 
