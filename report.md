@@ -875,9 +875,22 @@ ip r list 10.10.0.0/[маска сети] и ip r list 0.0.0.0/0
 Запусти на r1 команду дампа:
 tcpdump -tnv -i eth0
 
+
+- установка traceroute
+> ![](./img/5_task/ws11_traceroute_install.png) 
+
 При помощи утилиты traceroute построй список маршрутизаторов на пути от ws11 до ws21.
 
+
 В отчёт помести скрины с вызовом и выводом использованных команд (tcpdump и traceroute);
+
+
+> ![](./img/5_task/tcp_dump_r1_two.png) 
+> ![](./img/5_task/tracerote_tcpdump_ws11.png)
+> ![](./img/5_task/tracerote_tcpdump_r1.png) 
+
+
+
 В отчёте, опираясь на вывод, полученный из дампа на r1, объясни принцип работы построения пути при помощи traceroute.
 
 
