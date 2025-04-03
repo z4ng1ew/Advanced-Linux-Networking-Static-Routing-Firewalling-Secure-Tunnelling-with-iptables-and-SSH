@@ -561,11 +561,11 @@ sudo apt update && sudo apt install -y iperf3
 > - ws1
 >
 >   `iperf -s`
-> ![part3](./img/3_task/iperf3_ws1.png)
+> ![](./img/3_task/iperf3_ws1.png)
 > - ws2
 >
 >   `iperf -c 192.168.100.10`
-> ![part3](./img/3_task/iperf_ws2.png)
+> ![](./img/3_task/iperf_ws2.png)
 
 
 
@@ -601,9 +601,9 @@ iptables -X
 В отчёт помести скрины с содержанием файла /etc/firewall для каждой машины.
 
 
-> ![part3](./img/4_task/firewall_ws1.png)
+> ![](./img/4_task/firewall_ws1.png)
 
-> ![part3](./img/4_task/firewall_ws2.png)
+> ![](./img/4_task/firewall_ws2.png)
 
 
 
@@ -611,9 +611,9 @@ iptables -X
 
 Запусти файлы на обеих машинах командами chmod +x /etc/firewall.sh и /etc/firewall.sh.
 
-> ![part3](./img/4_task/sudo_chmod_firewall_ws1.png)
+> ![](./img/4_task/sudo_chmod_firewall_ws1.png)
 
-> ![part3](./img/4_task/sudo_chmod_firewall_ws2.png)
+> ![](./img/4_task/sudo_chmod_firewall_ws2.png)
 
 В отчёт помести скрины с запуском обоих файлов.
 В отчёте опиши разницу между стратегиями, применёнными в первом и втором файлах.
@@ -621,9 +621,9 @@ iptables -X
 
 
 
-> ![part3](./img/4_task/sudo_firewall_ping_ws1.png)
+> ![](./img/4_task/sudo_firewall_ping_ws1.png)
 
-> ![part3](./img/4_task/sudo_firewall_ping_ws2.png)
+> ![](./img/4_task/sudo_firewall_ping_ws2.png)
 
 
 
@@ -643,15 +643,15 @@ iptables -X
 
  - Командой ping найди машину, которая не «пингуется», после чего утилитой nmap покажи, что хост машины запущен.
 Проверка: в выводе nmap должно быть сказано: Host is up.
-> ![part3](./img/4_task/sudo_firewall_ping_ws2.png)
+> ![](./img/4_task/sudo_firewall_ping_ws2.png)
 
  - В отчёт помести скрины с вызовом и выводом использованных команд ping и nmap.
 
 
 - ws1
-> ![part3](./img/4_task/nmap_172.png)
+> ![](./img/4_task/nmap_172.png)
 - ws2
-> ![part3](./img/4_task/nmap_192.png)
+> ![](./img/4_task/nmap_192.png)
 
 
 
@@ -663,12 +663,12 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 
 
 - ws1
-> ![part3](./img/4_task/snap_ws1.png)
+> ![](./img/4_task/snap_ws1.png)
 - ws2
-> ![part3](./img/4_task/snap_ws1.png)
+> ![](./img/4_task/snap_ws1.png)
 
 
-> ![part3](./img/4_task/Ova.png)
+> ![](./img/4_task/Ova.png)
 
 
 
@@ -681,30 +681,30 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 ## 5.1. Настройка адресов машин
 
 Настрой конфигурации машин в etc/netplan/00-installer-config.yaml согласно сети на рисунке.
-> ![part3](./img/5_task/r1.png)
-> ![part3](./img/5_task/r2.png)
-> ![part3](./img/5_task/ws11.png)
-> ![part3](./img/5_task/ws21.png)
-> ![part3](./img/5_task/ws22.png)
+> ![](./img/5_task/r1.png)
+> ![](./img/5_task/r2.png)
+> ![](./img/5_task/ws11.png)
+> ![](./img/5_task/ws21.png)
+> ![](./img/5_task/ws22.png)
 
 - В отчёт помести скрины с содержанием файла etc/netplan/00-installer-config.yaml для каждой машины.
 
 
 - Перезапусти сервис сети. Если ошибок нет, командой ip -4 a проверь, что адрес машины задан верно.
 
-> ![part3](./img/5_task/ip4a_r1.png)
-> ![part3](./img/5_task/ip4a_r2.png)
-> ![part3](./img/5_task/ip4a_ws11.png)
-> ![part3](./img/5_task/ip4a_ws21.png)
-> ![part3](./img/5_task/ip4a_ws22.png)
+> ![](./img/5_task/ip4a_r1.png)
+> ![](./img/5_task/ip4a_r2.png)
+> ![](./img/5_task/ip4a_ws11.png)
+> ![](./img/5_task/ip4a_ws21.png)
+> ![](./img/5_task/ip4a_ws22.png)
 
 <br>
 
  - Также пропингуй ws22 с ws21. 
  - ws21
-> ![part3](./img/5_task/ws21_Ping.png)
+> ![](./img/5_task/ws21_Ping.png)
  - ws22
-> ![part3](./img/5_task/ws22_ping.png)
+> ![](./img/5_task/ws22_ping.png)
 
  
 
@@ -713,9 +713,9 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 - Аналогично пропингуй r1 с ws11.
 
 - ws11
-> ![part3](./img/5_task/ws11_ping.png)
+> ![](./img/5_task/ws11_ping.png)
 - r1
-> ![part3](./img/5_task/r1_ping.png)
+> ![](./img/5_task/r1_ping.png)
 
 - В отчёт помести скрины с вызовом и выводом использованных команд.
 
@@ -739,8 +739,8 @@ P.S. Ни в коем случае не сохраняй дампы в гит!
 Открой файл /etc/sysctl.conf и добавь в него следующую строку:
 net.ipv4.ip_forward = 1
 
-> ![part3](./img/5_task/uncomment_r1.png)
-> ![part3](./img/5_task/uncomment_r2.png)
+> ![](./img/5_task/uncomment_r1.png)
+> ![](./img/5_task/uncomment_r2.png)
 
 
 
@@ -774,17 +774,17 @@ default via 10.10.0.1 dev eth0
 
 В отчёт помести скрин с содержанием файла etc/netplan/00-installer-config.yaml;
 
-> ![part3](./img/5_task/via_routes_ws11.png) 
-> ![part3](./img/5_task/via_routes_ws21.png) 
-> ![part3](./img/5_task/via_routes_ws22.png) 
+> ![](./img/5_task/via_routes_ws11.png) 
+> ![](./img/5_task/via_routes_ws21.png) 
+> ![](./img/5_task/via_routes_ws22.png) 
 
 
 Вызови ip r и покажи, что добавился маршрут в таблицу маршрутизации.
 
 В отчёт помести скрин с вызовом и выводом использованной команды.
-> ![part3](./img/5_task/statick_ws11.png) 
-> ![part3](./img/5_task/statick_ws21.png) 
-> ![part3](./img/5_task/statick_ws22.png) 
+> ![](./img/5_task/statick_ws11.png) 
+> ![](./img/5_task/statick_ws21.png) 
+> ![](./img/5_task/statick_ws22.png) 
 
 
 
@@ -794,7 +794,7 @@ tcpdump -tn -i eth0
 
 В отчёт помести скрин с вызовом и выводом использованных команд.
 
-> ![part3](./img/5_task/tcpdump.png) 
+> ![](./img/5_task/tcpdump.png) 
 
 
 
@@ -813,12 +813,12 @@ tcpdump -tn -i eth0
 В отчёт помести скрины с содержанием изменённого файла etc/netplan/00-installer-config.yaml для каждого роутера.
 
 
-> ![part3](./img/5_task/sudo_netplan_r1.png) 
-> ![part3](./img/5_task/sudo_netplan_r2.png) 
+> ![](./img/5_task/sudo_netplan_r1.png) 
+> ![](./img/5_task/sudo_netplan_r2.png) 
 
 
-> ![part3](./img/5_task/apply_sudo_netplan_r1.png) 
-> ![part3](./img/5_task/apply_sudo_netplan_r2.png) 
+> ![](./img/5_task/apply_sudo_netplan_r1.png) 
+> ![](./img/5_task/apply_sudo_netplan_r2.png) 
 
 Вызови ip r и покажи таблицы с маршрутами на обоих роутерах. Пример таблицы на r1:
 
@@ -829,13 +829,13 @@ tcpdump -tn -i eth0
 
 В отчёт помести скрин с вызовом и выводом использованной команды.
 
-> ![part3](./img/5_task/ipr_r1.png) 
-> ![part3](./img/5_task/ipr_r2.png) 
+> ![](./img/5_task/ipr_r1.png) 
+> ![](./img/5_task/ipr_r2.png) 
 
 
 Запусти команды на ws11:
 ip r list 10.10.0.0/[маска сети] и ip r list 0.0.0.0/0
-> ![part3](./img/5_task/list_ws11.png) 
+> ![](./img/5_task/list_ws11.png) 
 
 
 
