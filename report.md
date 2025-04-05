@@ -1025,11 +1025,11 @@ sudo nano /etc/dhcp/dhcpd.conf
 sudo nano /etc/resolv.conf
 ```
 
-![alt text](resolv_conf_no_reduction_r2.png)
+![alt text](./img/6_task/resolv_conf_no_reduction_r2.png)
 
 - после изменений 
 
-![alt text](8.8.8.8_resolv_conf_r2.png) 
+![alt text](./img/6_task/8.8.8.8_resolv_conf_r2.png) 
 
 
 
@@ -1038,7 +1038,7 @@ sudo nano /etc/resolv.conf
 systemctl restart isc-dhcp-server
 ```
 
-![alt text](reboot_dhcp_r2.png) 
+![alt text](./img/6_task/reboot_dhcp_r2.png) 
 
 
 Проверяем статус службы
@@ -1047,7 +1047,7 @@ systemctl restart isc-dhcp-server
 sudo systemctl status isc-dhcp-server
 ```
 
-![alt text](status_dhcp.png)
+![alt text](./img/6_task/status_dhcp.png)
 
 
 Поменяем настройки машин ws21 и ws22 в netplan конфигурации, чтобы сделать  DHCP активным. Введём команды на каждой из машин:
@@ -1059,28 +1059,28 @@ sudo netplan apply
 ```
 
 
-![alt text](ws21_ws21_netplan_apply.png) 
-![alt text](ws22_config_netplan_dhcp.png) 
-![alt text](ws21_config_netplan_dhcp.png)
+![alt text](./img/6_task/ws21_ws21_netplan_apply.png) 
+![alt text](./img/6_task/ws22_config_netplan_dhcp.png) 
+![alt text](./img/6_task/ws21_config_netplan_dhcp.png)
 
 
 
 
 Ставим машину ws21 на перезагрузку:
-![alt text](reboot_ws21-1.png) 
+![alt text](img/6_task/reboot_ws21.png) 
 
 
 
 Смотрим присвоенныt для виртуальных машин ws1 ws2  ip-адреса:
 
-![alt text](ws21_ip-1.png)
+![alt text](img/6_task/ws21_ip.png)
 
-![alt text](ws22_ip-1.png) 
+![alt text](img/6_task/ws22_ip.png) 
 
 
 
 Пингуем соединение машины ws22 с ws21
-![alt text](ping_ws22_with_ws21-1.png)
+![alt text](img/6_task/ping_ws22_with_ws21.png)
 
 
 
@@ -1091,11 +1091,32 @@ sudo netplan apply
 
 
  
+## 6.2 Указать MAC-адреса
+Чтобы указать MAC-адрес у ws11, в файл etc/netplan/00-installer-config.yaml надо добавить строки: macaddress: 10:10:10:10:10:BA, dhcp4: true
 
+sudo nano /etc/netplan/00-installer-config.yaml
+
+sudo netplan apply
 
  
- 
+![alt text](img/6_task/ws11_net_plan_apply.png) 
+Выключаем машину ws11
+```
+ sudo shutdown -h now
+```
+Заходим в менеджер виртуальных машин VirtualBox и там настраиваем ws11 MAC-адрес
+![alt text](img/6_task/MANAGER_WS11.png) 
 
 
 
+![alt text](img/6_task/ws21_sudo_dhclient_-r.png) 
+![alt text](img/6_task/ip_a_ws11.png) 
 
+![alt text](img/6_task/r1_dhcp_conf.png) 
+![alt text](img/6_task/r1_resolv_conf.png) 
+![alt text](img/6_task/r1_systemctl_restart_isc-dhcp-server.png) 
+
+![alt text](img/6_task/ws11_ping_-c_5_10.10.0.4.png) 
+![alt text](img/6_task/ws21_sudo_dhclient.png) 
+![alt text](img/6_task/ip_a_ws21.png)
+![alt text](img/6_task/dhcp_server_install_r1.png)
