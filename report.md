@@ -580,7 +580,7 @@ sudo apt update && sudo apt install -y iperf3
 
 #!/bin/sh
 
-# Удаление всех правил в таблице «filter» (по умолчанию).
+## Удаление всех правил в таблице «filter» (по умолчанию).
 iptables -F
 iptables -X
 
@@ -1016,6 +1016,85 @@ sudo nano /etc/dhcp/dhcpd.conf
 ```
 
 > ![](./img/6_task/change_dhcp-conf_r2.png) 
+
+
+
+
+Нужно изменить /etc/resolv.conf(содержит адреса серверов имен, к которым имеет доступ данная система) прописываем nameserver 8.8.8.8
+```
+sudo nano /etc/resolv.conf
+```
+
+![alt text](resolv_conf_no_reduction_r2.png)
+
+- после изменений 
+
+![alt text](8.8.8.8_resolv_conf_r2.png) 
+
+
+
+Перезапаустим службу DHCP
+```
+systemctl restart isc-dhcp-server
+```
+
+![alt text](reboot_dhcp_r2.png) 
+
+
+Проверяем статус службы
+
+```
+sudo systemctl status isc-dhcp-server
+```
+
+![alt text](status_dhcp.png)
+
+
+Поменяем настройки машин ws21 и ws22 в netplan конфигурации, чтобы сделать  DHCP активным. Введём команды на каждой из машин:
+
+```
+sudo nano /etc/netplan/00-installer-config.yaml
+
+sudo netplan apply
+```
+
+
+![alt text](ws21_ws21_netplan_apply.png) 
+![alt text](ws22_config_netplan_dhcp.png) 
+![alt text](ws21_config_netplan_dhcp.png)
+
+
+
+
+Ставим машину ws21 на перезагрузку:
+![alt text](reboot_ws21-1.png) 
+
+
+
+Смотрим присвоенныt для виртуальных машин ws1 ws2  ip-адреса:
+
+![alt text](ws21_ip-1.png)
+
+![alt text](ws22_ip-1.png) 
+
+
+
+Пингуем соединение машины ws22 с ws21
+![alt text](ping_ws22_with_ws21-1.png)
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
 
 
 
