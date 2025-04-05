@@ -1071,7 +1071,7 @@ sudo netplan apply
 
 
 
-Смотрим присвоенныt для виртуальных машин ws1 ws2  ip-адреса:
+Смотрим присвоенные для виртуальных машин ws1 ws2  ip-адреса:
 
 ![alt text](img/6_task/ws21_ip.png)
 
@@ -1079,7 +1079,8 @@ sudo netplan apply
 
 
 
-Пингуем соединение машины ws22 с ws21
+- Пингуем соединение машины ws22 с ws21
+
 ![alt text](img/6_task/ping_ws22_with_ws21.png)
 
 
