@@ -1097,11 +1097,10 @@ sudo netplan apply
 📄 **Изменение конфигурации Netplan на ws11**  
 В файл `/etc/netplan/00-installer-config.yaml` добавлен параметр `macaddress: 10:10:10:10:10:BA` и включена настройка `dhcp4: true` для получения IP-адреса по DHCP.  
 После применения настроек командой `sudo netplan apply` машина выключается для последующего ручного указания MAC-адреса в VirtualBox.
-
+```
 sudo nano /etc/netplan/00-installer-config.yaml
-
 sudo netplan apply
-
+```
 ![alt text](img/6_task/ws11_net_plan_apply.png) 
 
 
@@ -1131,7 +1130,7 @@ sudo netplan apply
 
 🚀 **Перезапуск и проверка службы DHCP**  
  - После всех изменений перезапущена служба DHCP (`systemctl restart isc-dhcp-server`) и проверен её статус, чтобы убедиться в корректной работе сервиса.
- 
+
 ![alt text](img/6_task/r1_systemctl_restart_isc-dhcp-server.png) 
 ![alt text](img/6_task/r1_stasus_isc-dhcp-server.png)
 
