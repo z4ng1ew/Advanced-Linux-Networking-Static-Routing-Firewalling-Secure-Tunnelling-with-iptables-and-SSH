@@ -1229,7 +1229,7 @@ sudo netplan apply
 
 
 
-
+## Part 7. NAT
 
 
 
