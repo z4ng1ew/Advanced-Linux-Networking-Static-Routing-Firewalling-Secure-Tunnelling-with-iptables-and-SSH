@@ -1285,8 +1285,7 @@ sudo netplan apply
 ![alt text](img/7_task/r2_cmod_bash_res_two.png) 
 ![alt text](img/7_task/ws22_telnet.png) 
 ![alt text](img/7_task/ws22_telnet_eneble.png)
-![alt text](img/7_task/оказия_2.png) 
-![alt text](img/7_task/оказия1.png)
+
 ---
 
 ###  8. Настройка SNAT — маскирование внутренней сети
