@@ -547,7 +547,8 @@ done
 1. **8 Mbps** в **MB/s**  **= 1 MB/s**
 2. **100 MB/s** в **Kbps**  **= 800000 Kbps**
 3. **1 Gbps** в **Mbps**  **= 1000 Mbps**
-![part2](./img/3_task/math_of_speed.png)
+
+- ![part2](./img/3_task/math_of_speed.png)
 
 ---
 
