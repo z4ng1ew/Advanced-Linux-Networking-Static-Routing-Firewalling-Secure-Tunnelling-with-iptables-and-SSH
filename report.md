@@ -565,11 +565,11 @@ sudo apt update && sudo apt install -y iperf3
 > - ws1
 >
 >   `iperf -s`
-> ![](./img/3_task/iperf3_ws1.png)
+- ![](./img/3_task/iperf3_ws1.png)
 > - ws2
 >
 >   `iperf -c 192.168.100.10`
-> ![](./img/3_task/iperf_ws2.png)
+- ![](./img/3_task/iperf_ws2.png)
 
 
 
